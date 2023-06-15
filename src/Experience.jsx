@@ -30,12 +30,12 @@ export default function Experience()
     })
 
     const portalMaterial = new PortalMaterial()
-    console.log(portalMaterial)
+    // console.log(portalMaterial)
 
     useFrame((state, delta) =>
     {
         portalMaterial.uniforms.time.value += delta
-        console.log(portalMaterial.uniforms.time.value)
+        // console.log(portalMaterial.uniforms.time.value)
     })
 
     useEffect(() => {
@@ -44,7 +44,7 @@ export default function Experience()
             model.scene.traverse(o => {
                 if(o.isMesh)
                 {
-                    console.log(o.name)
+                    // console.log(o.name)
                     o.castShadow = true
                     // o.material = material2
                     o.material.transparent = true
@@ -54,7 +54,7 @@ export default function Experience()
 
                 if(o.name === 'mod')
                 {
-                    console.log(o)
+                    // console.log(o)
                     o.material = portalMaterial
                     o.scale.y = 1.0001
                     // o.material.transparent = true

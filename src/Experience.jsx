@@ -74,7 +74,7 @@ export default function Experience()
     return <>
         {/* Orbit Controls */}
         <OrbitControls makeDefault enableZoom={true} enablePan={false}/>
-        <fog attach="fog" args={[0xffffff, 20, 25]} />
+        <fog attach="fog" args={[0xffffff, 30, 40]} />
         <Stage adjustCamera={1.5}  intensity={0.5} shadows="contact" matrixWorldNeedsUpdate> 
             {/* control presentation - user rotation of model */}
             {/* <PresentationControls 
